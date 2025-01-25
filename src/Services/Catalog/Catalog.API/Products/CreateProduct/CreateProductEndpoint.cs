@@ -17,7 +17,7 @@
 
                 var response = result.Adapt<CreateProductResponse>();
 
-                return Results.Created($"/products/{response.Id}", response);
+                return Results.Created($"{response.Id}", response);
 
 
             })
